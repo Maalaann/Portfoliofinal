@@ -1,0 +1,48 @@
+body {
+    background-image: url('bac.gif');
+    background-repeat: no-repeat;
+
+
+}
+
+a {
+    position: absolute;
+    left: 5%;
+}
+
+.a {
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.type {
+    color: #0000;
+    background:
+        linear-gradient(-90deg, #000000 5px, #0000 0) 10px 0,
+        linear-gradient(#000000 0 0) 0 0;
+    background-size: calc(var(--n)*1ch) 200%;
+    -webkit-background-clip: padding-box, text;
+    background-clip: padding-box, text;
+    background-repeat: no-repeat;
+    animation:
+        b .7s infinite steps(1),
+        t calc(var(--n)*.2s) steps(var(--n)) forwards;
+
+}
+
+@keyframes t {
+    from {
+        background-size: 0 200%
+    }
+}
+
+@keyframes b {
+    50% {
+        background-position: 0 -100%, 0 0
+    }
+}

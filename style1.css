@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  transition: all 0.5s ease;
+}
+
+p {
+
+  font-size: 50px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'Press Start 2P', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  background-image: url('bac.gif');
+  background-repeat: no-repeat;
+
+
+}
+
+.Tout {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+
+
+}
+
+.calculatrice {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #000;
+}
+
+#ecran {
+  margin: 0 10px;
+  height: 150px;
+  width: auto;
+  max-width: 270px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  overflow-x: scroll;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#ecran::-webkit-scrollbar {
+  display: block;
+  height: 3px;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 100ms ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button#egale {
+  height: 130px;
+}
+
+.affichage {
+  width: 100%;
+  height: 100px;
+  background-color: #22776c;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  box-shadow: inset 2px 2px 5px #444444,
+    inset -5px -5px 10px #51515173;
+}
+
+.espace {
+  border-radius: 50px;
+}
+
+/*Couleur de la calculatrice*/
+
+.calculatrice {
+  background: linear-gradient(to bottom right, rgb(2, 131, 103), rgb(180, 232, 229));
+}
+
+.calculatrice.noir #ecran {
+  color: #ffffff;
+}
+
+.calculatrice.noir button#effacer {
+  background-color: #e86591;
+  color: #ffffff;
+}
+
+.calculatrice.noir button.Chiffre {
+  background-color: #00464d;
+  color: #f8fafb;
+}
+
+.calculatrice.noir button.btn-operateur {
+  background-color: #22776c;
+  color: #00ffaa;
+}
+
+.calculatrice.noir button.btn-egale {
+  background-color: #22776c;
+  color: #ffffff;
+}

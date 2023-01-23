@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/png" href="cal.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <title>Calculatrice</title>
+</head>
+
+<body>
+    <div class="Tout">
+        <div class="calculatrice noir">
+            <div class="affichage">
+                <div id="ecran"></div>
+            </div>
+
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="btn-operateur" id="effacer"><a>AC</a></button></td>
+                        <td><button class="btn-operateur" id="/"><a>&divide;</a></button></td>
+                        <td><button class="btn-operateur" id="*"><a>&times;</a></button></td>
+                        <td><button class="btn-operateur" id="Arret"><a>F</a></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="Chiffre" id="7"><a>7</a></button></td>
+                        <td><button class="Chiffre" id="8"><a>8</a></button></td>
+                        <td><button class="Chiffre" id="9"><a>9</a></button></td>
+                        <td><button class="btn-operateur" id="-"><a>-</a></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="Chiffre" id="4"><a>4</a></button></td>
+                        <td><button class="Chiffre" id="5"><a>5</a></button></td>
+                        <td><button class="Chiffre" id="6"><a>6</a></button></td>
+                        <td><button class="btn-operateur" id="+"><a>+</a></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="Chiffre" id="1"><a>1</a></button></td>
+                        <td><button class="Chiffre" id="2"><a>2</a></button></td>
+                        <td><button class="Chiffre" id="3"><a>3</a></button></td>
+                        <td rowspan="2"><button class="btn-egale" id="egale"><a>=</a></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="Chiffre" id="0"><a>0</a></button></td>
+                        <td><button class="btn-operateur" id="."><a>.</a></button></td>
+                        <td><button class="btn-operateur" id="retour"><a>C</a></button></td>
+
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js1.js"></script>
+</body>
+
+</html>
